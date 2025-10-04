@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquadOverlay - Overlay</title>
+    <link rel="stylesheet" href="overlay.css">
+</head>
+<body>
+    <div class="overlay-container">
+        <!-- Top overlay panel -->
+        <div class="overlay-panel top-panel">
+            <div class="overlay-content">
+                <div class="game-info">
+                    <span class="info-item">Team: Squad A</span>
+                    <span class="info-item">Players: 12/16</span>
+                    <span class="info-item">Score: 150-120</span>
+                </div>
+                <div class="time-info">
+                    <span id="gameTime">00:00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom overlay panel -->
+        <div class="overlay-panel bottom-panel">
+            <div class="overlay-content">
+                <div class="player-list">
+                    <div class="player-item">
+                        <span class="player-name">Player1</span>
+                        <span class="player-score">1250</span>
+                        <span class="player-status online">Online</span>
+                    </div>
+                    <div class="player-item">
+                        <span class="player-name">Player2</span>
+                        <span class="player-score">1180</span>
+                        <span class="player-status online">Online</span>
+                    </div>
+                    <div class="player-item">
+                        <span class="player-name">Player3</span>
+                        <span class="player-score">950</span>
+                        <span class="player-status offline">Offline</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Center overlay for important messages -->
+        <div class="overlay-panel center-panel" id="centerPanel" style="display: none;">
+            <div class="overlay-content">
+                <div class="center-message" id="centerMessage">
+                    Welcome to SquadOverlay!
+                </div>
+            </div>
+        </div>
+
+        <!-- Side overlay panel -->
+        <div class="overlay-panel side-panel">
+            <div class="overlay-content">
+                <div class="quick-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">K/D</span>
+                        <span class="stat-value">2.5</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Wins</span>
+                        <span class="stat-value">45</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Rank</span>
+                        <span class="stat-value">Gold</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="overlay.js"></script>
+</body>
+</html>
